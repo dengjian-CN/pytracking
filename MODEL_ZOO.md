@@ -17,6 +17,7 @@ of the models on standard tracking datasets.
     <th>LaSOTExtSub<br>AUC (%)</th>
     <th>TrackingNet<br>AUC (%)</th>
     <th>GOT-10k<br>AO (%)</th>
+    <th>AVisT<br>AUC (%)</th>
     <th>Links</th>
   </tr>
   <tr>
@@ -29,6 +30,7 @@ of the models on standard tracking datasets.
     <td>-</td>
     <td>70.3</td>
     <td>55.6</td>
+    <td>38.6</td>
     <td><a href="https://drive.google.com/open?id=1VNyr-Ds0khjM0zaq6lU-xfY74-iWxBvU">model</a></td>
   </tr>
   <tr>
@@ -41,6 +43,7 @@ of the models on standard tracking datasets.
     <td>-</td>
     <td>72.3</td>
     <td>57.9</td>
+    <td>40.6</td>
     <td><a href="https://drive.google.com/open?id=1MAjrRJDCbL0DSjUKFyDkUuYS1-cYBNjk">model</a></td>
   </tr>
   <tr>
@@ -53,6 +56,7 @@ of the models on standard tracking datasets.
     <td>-</td>
     <td>74.0</td>
     <td>61.1</td>
+    <td>41.9</td>
     <td><a href="https://drive.google.com/open?id=1qgachgqks2UGjKx-GdO1qylBDdB1f9KN">model</a></td>
   </tr>
   <tr>
@@ -65,6 +69,7 @@ of the models on standard tracking datasets.
     <td>-</td>
     <td>75.0</td>
     <td>61.2</td>
+    <td>41.7</td>
     <td><a href="https://drive.google.com/open?id=1ycm3Uu63j-uCkz4qt0SG6rY_k5UFlhVo">model</a></td>
   </tr>
   <tr>
@@ -77,6 +82,7 @@ of the models on standard tracking datasets.
     <td>-</td>
     <td>75.8</td>
     <td>63.4</td>
+    <td>43.3</td>
     <td><a href="https://drive.google.com/open?id=1zbQUVXKsGvBEOc-I1NuGU6yTMPth_aI5">model</a></td>
   </tr>
   <tr>
@@ -89,6 +95,7 @@ of the models on standard tracking datasets.
     <td>-</td>
     <td>78.1</td>
     <td>-</td>
+    <td>48.4</td>
     <td><a href="https://drive.google.com/open?id=1qDptswis2FxihLRYLVRGDvx6aUoAVVLv">model</a></td>
   </tr>
   <tr>
@@ -99,6 +106,7 @@ of the models on standard tracking datasets.
     <td>68.2</td>
     <td>63.5</td>
     <td>43.7</td>
+    <td>-</td>
     <td>-</td>
     <td>-</td>
     <td><a href="https://drive.google.com/file/d/1lzwdeX9HBefQwznMaX5AKAGda7tqeQtg">model</a></td>
@@ -113,6 +121,7 @@ of the models on standard tracking datasets.
     <td>-</td>
     <td>74.0</td>
     <td>63.6</td>
+    <td>42.5</td>
     <td><a href="https://drive.google.com/open?id=1nJTBxpuBhN0WGSvG7Zm3yBc9JAC6LnEn">model</a></td>
   </tr>
   <tr>
@@ -125,6 +134,7 @@ of the models on standard tracking datasets.
     <td>48.2</td>
     <td>-</td>
     <td>-</td>
+    <td>49.5</td>
     <td><a href="https://drive.google.com/file/d/1JIhzF1yd1EFbVCKJMakqEjWngthySIS5">model</a></td>
   </tr>
   <tr>
@@ -137,6 +147,7 @@ of the models on standard tracking datasets.
     <td>45.4</td>
     <td>81.2</td>
     <td>-</td>
+    <td>51.6</td>
     <td><a href="https://drive.google.com/file/d/1dU1IYIv5x_7iOUVTgh8uOq36POFOQBWT">model</a></td>
   </tr>
   <tr>
@@ -149,7 +160,21 @@ of the models on standard tracking datasets.
     <td>45.9</td>
     <td>81.5</td>
     <td>-</td>
+    <td>50.9</td>
     <td><a href="https://drive.google.com/file/d/1XQAtrM9n_PHQn-B2i8y6Q-PQFcAoKObA">model</a></td>
+  </tr>
+  <tr>
+    <td>RTS</td>
+    <td>-</td>
+    <td>-</td>
+    <td>65.4</td>
+    <td>67.9</td>
+    <td>69.7</td>
+    <td>-</td>
+    <td>81.6</td>
+    <td>-</td>
+    <td>50.8</td>
+    <td><a href="https://drive.google.com/drive/folders/1uMQqeRN4RbaeF3IsRpvjvk6D5K8khpSW?usp=sharing">model</a></td>
   </tr>
 </table>
 
@@ -163,14 +188,18 @@ For OTB-100, NFS, UAV123, LaSOT and LaSOTExtSub, the results were averaged over 
 as per the VOT protocol. As TrackingNet results are obtained using the online evaluation server, only a 
 single run was used for TrackingNet. For GOT-10k, 3 runs are used as per protocol.
 
+The raw results on the AVisT benchmark for the trackers in this repository (see above) and some external trackers are available [here](https://drive.google.com/open?id=1Sacgh5TZVjfpanmwCFvKkpnOA7UHZCY0).
+
 
 ## VOS
 
 ### Models
-|    Model    | YouTube-VOS 2018 (Overall Score) | YouTube-VOS 2019 (Overall Score) | DAVIS 2017 val (J&F score) | Links |
-|:-----------:|:--------------------------------:|:--------------------------------:|:--------------------------:|:-----:|
-|  [LWL_ytvos](ltr/train_settings/lwl/lwl_stage2.py)  |               81.5               |               81.0               |              --             | [model](https://drive.google.com/file/d/1Xnm4A2BRBliDBKO4EEFHAQfGyfOMsVyY/view?usp=sharing) |
-| [LWL_boxinit](ltr/train_settings/lwl/lwl_boxinit.py) |               70.4               |                 --                |            70.8            | [model](https://drive.google.com/file/d/1aAsj_N1LAMpmmcb1iOxo2z66tJM6MEuM/view?usp=sharing) |
+|                        Model                         | YouTube-VOS 2018 (Overall Score) | YouTube-VOS 2019 (Overall Score) | DAVIS 2017 val (J&F score) | Links |
+|:----------------------------------------------------:|:--------------------------------:|:--------------------------------:|:--------------------------:|:-----:|
+|  [LWL_ytvos](ltr/train_settings/lwl/lwl_stage2.py)   |               81.5               |               81.0               |             --             | [model](https://drive.google.com/file/d/1Xnm4A2BRBliDBKO4EEFHAQfGyfOMsVyY/view?usp=sharing) |
+| [LWL_boxinit](ltr/train_settings/lwl/lwl_boxinit.py) |               70.4               |                --                |            70.8            | [model](https://drive.google.com/file/d/1aAsj_N1LAMpmmcb1iOxo2z66tJM6MEuM/view?usp=sharing) |
+|                         RTS                          |                --                |               79.7               |            80.2            | [model](https://drive.google.com/drive/folders/1uMQqeRN4RbaeF3IsRpvjvk6D5K8khpSW?usp=sharing) |
+|                      RTS (Box)                       |                --                |               70.8               |            72.6            | [model](https://drive.google.com/drive/folders/1uMQqeRN4RbaeF3IsRpvjvk6D5K8khpSW?usp=sharing) |
 
 
 ### Raw Results
